@@ -44,8 +44,8 @@ and open the template in the editor.
           </li>
         </ul>
           <form  class="form-inline buscai my-2 my-lg-0">
-      <input class="form-control mr-sm-2 " type="text" placeholder="Search">
-      <button class="btn3s btn-outline-info5 my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control mr-sm-2 " type="text" placeholder="Busca">
+      <button class="btn3s btn-outline-info5 my-2 my-sm-0" type="submit">Busca</button>
     </form>
       </div>
     </div>
