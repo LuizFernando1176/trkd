@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Traquinagem Kids</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(145deg, #fdf6f9, #f0faff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.login-form p {
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.3rem;
+  color: #444;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #dc017b;
+}
+
+.form-options {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.form-options a {
+  color: #dc017b;
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #dc017b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #c1006d;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.signup a {
+  color: #00b2ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+  </style>
+
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-form">
+      <h2>Bem-vindo de volta 👋</h2>
+      <p>Faça login para continuar comprando na <strong>Traquinagem Kids</strong></p>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="seuemail@email.com" required />
+
+      <label for="password">Senha</label>
+      <input type="password" id="password" placeholder="••••••••" required />
+
+      <div class="form-options">
+        <label><input type="checkbox" /> Lembrar-me</label>
+        <a href="#">Esqueci a senha</a>
+      </div>
+
+      <button type="submit">Entrar</button>
+
+      <p class="signup">Não tem conta? <a href="#">Criar agora</a></p>
+    </form>
+  </div>
+</body>
+</html>
