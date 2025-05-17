@@ -2,6 +2,11 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\SocialiteController;
+
+Route::get('login/{provider}', [SocialiteController::class, 'redirect'])->name('social.redirect');
+Route::get('login/{provider}/callback', [SocialiteController::class, 'callback'])->name('social.callback');
+
 
 Route::get('/', function () {
     return view('welcome');
